@@ -14,7 +14,31 @@
 - [References](#references)
 
 ## Project-Overview
-This project aims to analyze the most common protocols used in cyber attacks across different network segments and identify the most frequent types of attacks for each network segment. The analysis will provide valuable insights for the network security team and cybersecurity analysts to enhance their defensive strategies and resource allocation.
+
+Company A established in 2012, is a leading global technology company specializing in cybersecurity solutions. The company provides services to a diverse range of clients across various industries, ensuring the security and efficiency of their network operations.
+
+In recent years, Company A has observed a significant increase in the frequency of cyber attacks targeting its clients' networks. This has led to a growing concern about the effectiveness of current security measures and the need for a more data-driven approach to network defense strategies.
+
+The company has gathered substantial amounts of data on cyber attacks, including information on attack vectors, protocols used, affected network segments, and attack types. However, this valuable data has been previously underutilized in formulating defense strategies.
+
+This project aims to analyze this data to uncover critical insights that will enhance Company's A cybersecurity offerings and improve clients' overall network security posture.
+
+Insights and recommendations are provided on the following key areas:
+
+- Protocol Usage Analysis: Evaluation of the most common protocols (e.g., TCP, UDP, ICMP) used in cyber attacks across different network segments.
+- Network Segment Vulnerability: Assessment of which network segments are most frequently targeted and through which protocols.
+- Attack Pattern Identification: Analysis of recurring attack patterns and their correlation with specific protocols and network segments.
+- Attack types: Identify the most common attacks used in each network segment.
+- Defense Strategy Optimization: Recommendations for tailored firewall rules and resource allocation based on identified high-risk protocols and segments.
+
+The project utilizes data analysis techniques, including pivot table analysis in Excel, to process and interpret the vast amount of security data collected. This approach allows for a granular examination of attack patterns, attack types and provides a solid foundation for developing more robust and targeted security measures.
+
+By leveraging these insights, Company A aims to significantly enhance its ability to protect clients' networks.
+
+## Data Structure Overview
+
+![image](https://github.com/user-attachments/assets/a800e4c0-d8ed-4b2a-bc15-dd0aca3d14e2)
+
 
 ## Data Sources
 Cybersecurity Data : The primary data used for this is the "cybersecurity_attacks.csv" file, containing detailed information about the network and attacks on the network.
