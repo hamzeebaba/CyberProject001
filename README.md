@@ -15,6 +15,8 @@
 
 ## Project-Overview
 This project aims to analyze the most common protocols used in cyber attacks across different network segments and identify the most frequent types of attacks for each network segment. The analysis will provide valuable insights for the network security team and cybersecurity analysts to enhance their defensive strategies and resource allocation.
+![cyber protocols in cyber attack](https://github.com/user-attachments/assets/35a3e2df-7b86-463d-b087-24e4d984d436)
+
 
 ## Data Sources
 Cybersecurity Data : The primary data used for this is the "cybersecurity_attacks.csv" file, containing detailed information about the network and attacks on the network.
