@@ -15,8 +15,6 @@
 
 ## Project-Overview
 This project aims to analyze the most common protocols used in cyber attacks across different network segments and identify the most frequent types of attacks for each network segment. The analysis will provide valuable insights for the network security team and cybersecurity analysts to enhance their defensive strategies and resource allocation.
-![cyber protocols in cyber attack](https://github.com/user-attachments/assets/35a3e2df-7b86-463d-b087-24e4d984d436)
-
 
 ## Data Sources
 Cybersecurity Data : The primary data used for this is the "cybersecurity_attacks.csv" file, containing detailed information about the network and attacks on the network.
@@ -35,7 +33,13 @@ In the initial phase, the following was performed
 ## Exploratory Data Analysis
 Initial exploration of the Data to answer key questions
 - What are the most common protocols (e.g., TCP, UDP, ICMP) used in cyber attacks across different network segments?
+  
+![cyber protocols in cyber attack](https://github.com/user-attachments/assets/ba7fc7bb-1066-43f6-9dfa-cc4121629b7b)
+
 - What types of attacks (based on 'Attack Type' and 'Attack Signature') are most frequent for each network segment (e.g., Segment A, Segment B, etc.)?
+  
+![Most common cyber attacks in a network segment](https://github.com/user-attachments/assets/1a6c1e94-3c8b-4820-bd81-6978767d35a0)
+
 
 ## Data Analysis
 The analysis was conducted in two main parts:
@@ -84,8 +88,8 @@ The analysis was conducted in two main parts:
 - The analysis does not account for the severity or impact of each attack, only their frequency
 
 ## References
-Youtube.com [https://www.youtube.com/watch?v=0N9xekdKCwk]
-Kaggle [https://www.kaggle.com/datasets/teamincribo/cyber-security-attacks]
+- [Youtube](https://www.youtube.com/watch?v=0N9xekdKCwk)
+- [Kaggle](https://www.kaggle.com/datasets/teamincribo/cyber-security-attacks)
 
 ---
 
