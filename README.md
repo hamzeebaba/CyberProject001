@@ -2,16 +2,12 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Data Sources](#data-sources)
-- [Tools](#tools)
-- [Data Cleaning/Preparation](#data-cleaningpreparation)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Data Analysis](#data-analysis)
-- [Results](#results)
-- [Conclusions](#conclusions)
+- [Data Structure Overview](#data-structure-overview)
+- [Executive Summary](#executive-summary)
+- [Insights Deep Dive](#insights-deep-dive)
 - [Recommendations](#recommendations)
-- [Limitations](#limitations)
-- [References](#references)
+- [Caveat & Limitations](#caveat-&-limitations)
+
 
 ## Project-Overview
 
@@ -37,84 +33,121 @@ By leveraging these insights, Company A aims to significantly enhance its abilit
 
 ## Data Structure Overview
 
-![image](https://github.com/user-attachments/assets/a800e4c0-d8ed-4b2a-bc15-dd0aca3d14e2)
+Company A database structure as seen below. Consists of Network entity, Attacks, Logs/Alerts, and User/Device.
+
+![erd](https://github.com/user-attachments/assets/13e5db53-e62d-4af5-9b7f-b063b55486fa)
+
+## Executive Summary
+
+This analysis focuses on two critical aspects of network security:
+
+### Protocol Usage in Cyber Attacks:
+
+Identified the most frequently exploited protocols across different network segments.
+Key finding: ICMP and UDP are the most commonly used protocols in attacks, with significant variations across network segments.
 
 
-## Data Sources
-Cybersecurity Data : The primary data used for this is the "cybersecurity_attacks.csv" file, containing detailed information about the network and attacks on the network.
+### Attack Types and Signatures by Network Segment:
 
-## Tools
-- Microsoft Excel (for pivot tables and data analysis)
+Analyzed the prevalence of specific attack types and signatures for each network segment.
+Key finding: Malware attacks are predominant in Segment A, Intrusion are more common in Segment B, and DDOS in Section C.
 
-## Data Cleaning/Preparation
-In the initial phase, the following was performed
-- Data loading and inspection
-- Data formating
-- Removing duplicate entries
-- Handling missing values
-- Ensuring consistent naming conventions for network segments]
 
-## Exploratory Data Analysis
-Initial exploration of the Data to answer key questions
-- What are the most common protocols (e.g., TCP, UDP, ICMP) used in cyber attacks across different network segments?
+## Insights Deep Dive
+
+### Protocol Analysis
+
+#### Methodology:
+
+Utilized Excel pivot tables to analyze protocol usage across network segments.
+Process: Created a pivot table with Network Segment as rows, Protocol as columns, and protocol frequency as values.
+Sorted data to identify the most common protocols for each segment.
+
+### Key Findings:
+
+Segment A shows a high prevalence of ICMP-based attacks (45% of all attacks).
+ICMP is the primary attack vector in Segment C (45% of attacks).
+ICMP-based attacks are also high in Segment B (44%)
+
+![cyber protocols in cyber attack](https://github.com/user-attachments/assets/342ab48a-46a9-4c20-84a5-6d645e026557)
+
+
+Implications:
+These findings suggest the need for protocol-specific security measures tailored to each network segment's unique risk profile.
+
+
+### Attack Type and Signature Analysis.
+
+#### Methodology:
+
+Employed Excel pivot tables to analyze attack types and signatures by network segment.
+Process: Created a pivot table with Network Segment as rows, Attack Type/Signature as columns, and frequency as values.
+Sorted data to identify the most common attack types and signatures for each segment.
+
+### Key Findings:
+
+Segment A is primarily targeted by Malware attacks (45% of all attacks in this segment).
+Intrusion attempts are most frequent in Segment B (45% of attacks).
+Segment C is targeted by DDos (45% of attacks).
+
+![Most common cyber attacks in a network segment](https://github.com/user-attachments/assets/50d50551-4636-45b6-9103-ed0ce0ad3cc0)
+
+
+Implications:
+These insights enable the development of segment-specific defense strategies, focusing resources on the most prevalent threats in each area of the network.
+
+## Recommendations.
+
+### Tips to Strengthen Network Protocols 
+
+**1. Keep Your Software Up-to-Date:**
+* Regular updates often include security patches that fix vulnerabilities that hackers can exploit.
+
+**2. Use Strong Passwords:**
+* Create complex passwords that are hard to guess. Use a combination of uppercase and lowercase letters, numbers, and symbols.
+
+**3. Install a Firewall:**
+* A firewall acts as a gatekeeper, blocking unwanted traffic from entering your network.
+
+**4. Limit Access to Network Resources:**
+* Only allow authorized devices and users to access your network. This helps prevent unauthorized access.
   
-![cyber protocols in cyber attack](https://github.com/user-attachments/assets/ba7fc7bb-1066-43f6-9dfa-cc4121629b7b)
 
-- What types of attacks (based on 'Attack Type' and 'Attack Signature') are most frequent for each network segment (e.g., Segment A, Segment B, etc.)?
+### Tips to Protect Your Network from Attacks
+
+**1. Layer Up Your Defenses:**
+* **Firewall:** Think of it as a gatekeeper for your network. Configure it to block unwanted traffic.
+* **Intrusion Detection System (IDS):** This is like a security guard that watches for suspicious activity and alerts you if something is wrong.
+* **Antivirus and Anti-Malware:** These tools protect your devices from harmful software that can steal your data or damage your system.
+
+**2. Keep It Updated:**
+* **Software Patches:** Regularly apply updates to your operating system, applications, and network devices. These updates often fix security vulnerabilities.
+* **Firmware Updates:** Keep your network hardware (routers, switches) up-to-date with the latest firmware to improve their security.
+
+**3. Train Your People:**
+* **Security Awareness:** Educate your employees about common threats like phishing scams and social engineering attacks.
+* **Best Practices:** Teach them to use strong passwords, avoid clicking on suspicious links, and report any unusual activity.
+
   
-![Most common cyber attacks in a network segment](https://github.com/user-attachments/assets/1a6c1e94-3c8b-4820-bd81-6978767d35a0)
+
+## Caveat & Limitations.
+
+While this analysis provides valuable insights into network security protocols and attack patterns, it's important to consider the following limitations:
+
+1. Data Timeframe: This analysis is based on data collected from [2020] to [2023]. Cyber threats evolve rapidly, and patterns observed may not reflect the most current trends.
+
+2. Sample Size: The dataset is limited, it may not capture all possible attack variations or unique network configurations.
+
+3. Geographic Limitations: The data primarily reflects attacks observed in certain regions. Attack patterns may vary in other geographic areas not covered by this analysis.
+
+4. False Positives: Despite rigorous data cleaning, there's a possibility that some identified "attacks" may be false positives or benign anomalies.
+
+5. Emerging Threats: This analysis may not account for newly emerging or zero-day threats that have not yet been widely observed or categorized.
+
+6. Network Specificity: The effectiveness of recommended measures may vary depending on the specific architecture and vulnerabilities of individual networks.
 
 
-## Data Analysis
-The analysis was conducted in two main parts:
+These caveats should be considered when interpreting the results and implementing recommendations. Regular updates to the analysis and continuous monitoring of new threats are advised to maintain the relevance and effectiveness of security measures.
+![cyber protocols in cyber attack](https://github.com/user-attachments/assets/918db2bd-a8a7-409a-bbd4-b97d00126a1b)
 
-1. Protocol Analysis:
-   - Created a pivot table in Excel
-   - Used Network Segment as rows, Protocol as columns, and protocol count as values
-   - Sorted data to identify the most common protocols for each network segment
-  
-
-2. Attack Type Analysis:
-   - Created a pivot table in Excel
-   - Used Network Segment as rows, and Attack Type/Signature as values
-   - Sorted data to identify the most common attack types and signatures for each segment
-
-## Results
-
-1. Protocol Analysis:
-   - Segment A: Top protocol in this segment is ICMP (4442)
-   - Segment B: Top protocol in this segment is ICMP (4471)
-   - Segment C: Top protocol in this segment is ICMP (4516)
-  
-2. Attack Type Analysis:
-   - Segment A: Most common attack are MALWARE (4479)
-   - Segment B: Most common attack are INTRUSION (4497)
-   - Segment C: Most common attack are DDOS (4517)
-
-## Conclusions
-
-- Different network segments show varying vulnerabilities to specific protocols and attack types.
-- ICMP is consistently the most exploited protocol across all segments.
-- Most common attack types is DDOS in segment C.
-
-## Recommendations
-1. Protocol-based recommendations:
-   - Implement stricter firewall rules for high-frequency attack protocols, especially ICMP
-   - Allocate additional monitoring resources to network segments with higher-risk protocol profiles
-
-2. Attack type-based recommendations:
-   - Develop tailored defensive measures for each network segment based on their most common attack types
-   - Prioritize security training and tools that address the most frequent attack signatures in each segment
-
-## Limitations
-- The analysis is based on historical data and may not reflect emerging attack trends
-- The effectiveness of recommended measures may vary and should be continuously monitored and adjusted
-- The analysis does not account for the severity or impact of each attack, only their frequency
-
-## References
-- [Youtube](https://www.youtube.com/watch?v=0N9xekdKCwk)
-- [Kaggle](https://www.kaggle.com/datasets/teamincribo/cyber-security-attacks)
-
----
-
-For more information, please contact [Your Name] at [your.email@company.com].
+----
