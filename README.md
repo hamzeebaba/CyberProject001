@@ -148,6 +148,3 @@ While this analysis provides valuable insights into network security protocols a
 
 
 These caveats should be considered when interpreting the results and implementing recommendations. Regular updates to the analysis and continuous monitoring of new threats are advised to maintain the relevance and effectiveness of security measures.
-![cyber protocols in cyber attack](https://github.com/user-attachments/assets/918db2bd-a8a7-409a-bbd4-b97d00126a1b)
-
-----
